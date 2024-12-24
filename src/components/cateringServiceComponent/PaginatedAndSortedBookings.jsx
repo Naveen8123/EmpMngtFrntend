@@ -73,7 +73,7 @@ const PaginatedAndSortedBookings = () => {
                     <td>{booking.bookingDate}</td>
                     <td>{booking.bookedOn}</td>
                     <td>{booking.status}</td>
-                  </tr>
+                  </tr>>
                 ))
               ) : (
                 <tr>
