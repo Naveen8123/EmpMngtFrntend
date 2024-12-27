@@ -1,9 +1,44 @@
-.footer{
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: black;
-  text-align: center;
-  color: white;
+/* App.css */
+/* ... (other styles) */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center; /* Default text alignment */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stack vertically by default */
+  align-items: center; /* Center horizontally */
+  gap: 20px; /* Space between sections */
+  max-width: 1200px; /* Optional: Max width for larger screens */
+  margin: 0 auto; /* Center the footer content */
+  padding: 0 20px; /* Add some side padding */
+}
+
+.contact-info h3 {
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .footer-content {
+      flex-direction: row; /* Arrange horizontally on larger screens */
+      justify-content: space-between; /* Distribute space between sections */
+      align-items: flex-start; /* Align items to the top on larger screens */
+  }
+  .copyright{
+      margin: auto 0;
+  }
 }

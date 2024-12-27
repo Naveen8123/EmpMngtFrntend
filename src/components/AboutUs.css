@@ -1,0 +1,40 @@
+/* AboutUs.css */
+.about-us-container {
+    padding: 20px;
+    max-width: 1200px; /* Set a maximum width for larger screens */
+    margin: 0 auto; /* Center the content */
+}
+
+.about-section,
+.mission-vision-section,
+.why-choose-us-section,
+.core-values-section {
+    margin-bottom: 30px; /* Add spacing between sections */
+}
+
+.mission-vision-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px;
+}
+
+.mission,
+.vision {
+    flex: 1 1 300px; /* Distribute space evenly, minimum width 300px */
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.why-choose-list,
+.core-values-list {
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mission-vision-section {
+        flex-direction: column; /* Stack mission and vision vertically */
+    }
+}

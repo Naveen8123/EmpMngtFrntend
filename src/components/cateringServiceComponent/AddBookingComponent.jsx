@@ -83,7 +83,7 @@ const [bookingDate, setBookingDate] = useState('')
       <h2 className="text-center">Booking Form</h2>
       <form action="" className='form-group'>
         <div className="mb-3">
-          <label htmlFor="custName" className="form-label">Name</label>
+          <label htmlFor="custName" className="form-label">Your Name *</label>
           <input
             type="text"
             placeholder='enter first name'
@@ -95,7 +95,7 @@ const [bookingDate, setBookingDate] = useState('')
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="mobileNum" className="form-label">Mobile Number</label>
+          <label htmlFor="mobileNum" className="form-label">Mobile Number *</label>
           <input
             type="text"
             placeholder="Enter your mobile number"

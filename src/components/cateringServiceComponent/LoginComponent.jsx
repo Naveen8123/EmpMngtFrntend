@@ -23,7 +23,8 @@ const LoginComponent = ({setIsLogged}) => {
             console.log(loginDetails);
             if(userName === name && password === pass){
                 setIsLogged(true)
-                  navigator('/dashboard')
+                  // navigator('/dashboard')
+                  navigator("/pagination")
             }else {
                 window.alert("invalid username and password, enter correct credentials");
                 navigator('/login')
@@ -32,43 +33,6 @@ const LoginComponent = ({setIsLogged}) => {
             }
             
           }
-
-        // function validateForm() {
-        //   let valid = true;
-      
-        //   const errorsCopy = { ...errors };
-      
-        //   if (customerName.trim()) {
-        //     errorsCopy.customerName = '';
-        //   } else {
-        //     errorsCopy.customerName = 'first name is required';
-        //     valid = false;
-        //   }
-      
-        //   if (mobileNo.trim()) {
-        //     errorsCopy.mobileNo = '';
-        //   } else {
-        //     errorsCopy.mobileNo = 'last name is required';
-        //     valid = false;
-        //   }
-      
-        //   if (address.trim()) {
-        //     errorsCopy.address = '';
-        //   } else {
-        //     errorsCopy.address = 'address is required';
-        //     valid = false;
-        //   }
-    
-        //   if (bookingDate) {
-        //     errorsCopy.bookingDate = '';
-        //   } else {
-        //     errorsCopy.address = 'address is required';
-        //     valid = false;
-        //   }
-      
-        //   setErrors(errorsCopy);
-        //   return valid;
-        // }
     
       return (
         <div className="container">

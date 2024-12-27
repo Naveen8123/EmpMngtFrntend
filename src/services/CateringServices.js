@@ -30,3 +30,4 @@ export const fetchPaginatedData = async (offset, pageSize) => {
     throw error;
   }
 };
+

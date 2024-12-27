@@ -1,0 +1,14 @@
+.carousel-item {
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Important: Occupy full height of the carousel item */
+}
+
+.carousel-image {
+  max-width: 100%; /* Image should not be wider than its container */
+  max-height: 100%; /* Image should not be taller than its container */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* or cover, depending on desired behavior */
+}

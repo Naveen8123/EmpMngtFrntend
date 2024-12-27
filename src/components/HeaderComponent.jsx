@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './Header.css';
 
 const HeaderComponent = ({ isLogged, setIsLogged }) => {
   const handleLogout = () => {
@@ -35,6 +36,49 @@ const HeaderComponent = ({ isLogged, setIsLogged }) => {
                 Home
               </a>
             </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle me-3"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a className="dropdown-item " href="/newBooking">
+                    Wedding Catering
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/orderStatus">
+                    Engagement
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item " href="/newBooking">
+                    Birthday Party
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/orderStatus">
+                    House Warming Function
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item " href="/newBooking">
+                    Corporate Catering
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/orderStatus">
+                    Marriage Reception
+                  </a>
+                </li>
+              </ul>
+            </li>
             {/* Dropdown for Book Order */}
             <li className="nav-item dropdown">
               <a
@@ -60,17 +104,17 @@ const HeaderComponent = ({ isLogged, setIsLogged }) => {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link me-3" href="/gallery">
+              <a className="nav-link me-3" href="/#gallery">
                 Gallery
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link me-3" href="/about">
+              <a className="nav-link me-3" href="/#about">
                 About Us
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link me-3" href="/contact">
+              <a className="nav-link me-3" href="/#contact">
                 Contact
               </a>
             </li>

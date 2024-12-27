@@ -1,0 +1,72 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box;
+    background-color: #f0f0f0; /* Light background color */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Darker heading color */
+}
+
+.login-container form {
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for larger screens */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Slightly darker label color */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+#lgbtn {
+    width: 100%; /* Make button full width */
+    background-color: #007bff; /* Blue button color */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition */
+}
+
+#lgbtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .login-container form {
+        padding: 15px;
+    }
+}
